@@ -1,0 +1,152 @@
+:root {
+  --primary: #0ef;
+  --bg: #1e1e2f;
+  --text: #e5e5e5;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+.container {
+  padding: 0 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--text);
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text span {
+  color: var(--primary);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.cta {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background: var(--primary);
+  border: none;
+  border-radius: 30px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta:hover {
+  background: #00cfff;
+}
+
+.glass-section {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin: 3rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.cta {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
